@@ -1,12 +1,17 @@
-@import url('https://fonts.google.com/specimen/Outfit');
+
 
 body{
-    background-color: hsl(220, 15%, 55%);
-    
+    background-color:var(--body-bg-color);
+}
+:root{
+    --body-bg-color: hsl(212, 45%, 89%);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --title-color: hsl(218, 44%, 22%);
+    --paragraph-color: hsl(220, 15%, 55%);
 }
 
 .container1{
-width: 1440px;
+width: 500px;
 height: 375px;
 text-align: center;
 
@@ -17,14 +22,27 @@ text-align: center;
     width: 300px;
     height: 450px;
     margin-top: 150px;
-    margin-left: 350px;
+    margin-left: 30em;
     border-radius: 30px;
+    text-align: center;
 }
 
-#h3{
-    font-family: 'Trebuchet MS'
+.title{
+    font-family: 'Red Hat Display';
+    font-size: medium;
+    color: var( --title-color);
+    text-align: center;
+    margin-left: 3em;
+   margin-right: 3em;
 }
-
+.text{
+    font-size: small;
+    font-family: 'Red Hat Display';
+    color: var(--paragraph-color);
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+    margin-top: -1em;
+}
 .card__img{
 width: 90%;
 height: 250px;
